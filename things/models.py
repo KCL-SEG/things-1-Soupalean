@@ -6,8 +6,8 @@ from django.db import models
 
 def inRange(integer):
     if 101 > integer >= 0:
-        return integer
-    raise AttributeError("quantity out of range")
+        return True
+    return False
 
 
 class Thing(models.Model):
